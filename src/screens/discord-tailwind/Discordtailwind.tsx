@@ -5,7 +5,8 @@ import styles from "./Discordtailwind.module.css";
 const discordTailwind = () => {
   return (
     <>
-      <div className=" flex flex-col  h-screen w-16 bg-primary fixed top-0 left-0 text-white shadow-xl shadow-gray-900 gap-1">
+      <div className=" flex flex-col  h-screen w-20 bg-primary fixed top-0 left-0 text-white shadow-xl shadow-gray-900 gap-1 ">
+        <div className="h-3"></div>
         <SideBarIcon icon={<FaFire size="28" />} />
         <SideBarIcon icon={<BsPlus size="32" />} />
         <SideBarIcon icon={<BsFillLightningFill size="20" />} />
@@ -23,7 +24,9 @@ const SideBarIcon = ({
   text?: string;
 }) => (
   <>
-    <div className={`${styles.sidebarIcon} group`}>
+    <div
+      className={`${styles.sidebarIcon} flex  justify-center items-center group`}
+    >
       {icon}
       <span className={`${styles.tooltip} group-hover:scale-100`}>{text}</span>
     </div>

@@ -22,7 +22,7 @@ const Home = () => {
           />
         </Link>
 
-        <Link to="/1">
+        <Link to="/res-navbar">
           <img
             src="https://picsum.photos/300/300"
             alt=""
